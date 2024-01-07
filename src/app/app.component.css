@@ -1,0 +1,220 @@
+/**** SPECIFIC STYLES ****/
+.first_space,
+.second_space {
+    width: 800px;
+    position: absolute;
+    z-index: 1;
+}
+
+.first_space {
+    top: -350px;
+    left: -300px;
+}
+
+.second_space {
+    bottom: -400px;
+    right: -350px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.form_control label {
+    font-size: 13px;
+    color: var(--hint-color);
+    margin-bottom: 5px;
+}
+
+.form_control input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: none;
+    outline: none;
+    border: 2px solid #4d5562;
+    border-radius: 12px;
+}
+
+.form_control input::placeholder {
+    opacity: .6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    gap: 20px;
+    margin: 30px;
+    z-index: 2;
+}
+
+
+/***  CARD STYLES  ***/
+.card {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card-color);
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card .step_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card h3 {
+    font-weight: 500;
+}
+
+.card .button_place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card .button_place button {
+    background: linear-gradient(to bottom, var(--start-gradient-accent-color), var(--end-gradient-accent-color));
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+/***  STEPS  ***/
+.steps_place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.steps_place span {
+    color: #AEAEAE;
+    opacity: .3;
+}
+
+.steps_place .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.step {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #3f4a5c;
+}
+
+.step.active {
+    outline: 5px solid #8059ea48;
+    background: var(--end-gradient-accent-color);
+}
+
+.step.done {
+    outline: none;
+    background: var(--end-gradient-accent-color);
+}
+
+
+/***  STEP 2  ***/
+.item {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-item);
+    cursor: pointer;
+}
+
+.item span {
+    font-size: 15px;
+    color: var(--hint-color);
+    opacity: .5;
+    pointer-events: none;
+}
+
+.item.selected {
+    background-color: var(--end-gradient-accent-color);
+}
+
+.item.selected span {
+    color: var(--hint-color);
+    opacity: 1;
+}
+
+/***  STEP 3  ***/
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.personal_info .info_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.personal_info .info_item p,
+.topics p {
+    color: var(--hint-color);
+    opacity: .5;
+}
+
+.personal_info .info_item span {
+    color: #fff;
+    opacity: 1;
+    
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topics ul {
+    margin-left: 1.5em;
+    line-height: 2em;
+}

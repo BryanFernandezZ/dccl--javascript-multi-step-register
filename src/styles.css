@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --bg-body: #121826;
+    --border-color: #4d5562;
+    --bg-card-color: #212936;
+    --start-gradient-accent-color: #8059ea;
+    --end-gradient-accent-color: #672fd2;
+    --hint-color: #D5D5D5;
+    --bg-item: #394050;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #F8F8FA;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--bg-body);
+}
+
+small {
+    color: rgb(255, 93, 93);
+}
